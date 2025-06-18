@@ -1,0 +1,7 @@
+[phases.build]
+cmds = [
+  "composer install --no-interaction --prefer-dist --optimize-autoloader",
+  "php artisan migrate --force",
+  "php artisan passport:install --force",
+  "php artisan storage:link"
+]
